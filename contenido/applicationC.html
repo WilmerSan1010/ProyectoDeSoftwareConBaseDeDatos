@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Postulación</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Postulación de candidatos</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="development.html">Áreas de Desarrollo</a></li>
+                <li><a href="applicationC.html">Postulación</a></li>
+                <li><a href="perfiles.html">Perfiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container my-5">
+        <section class="application-section">
+            <h2>Postulación</h2>
+            <form id="formularioPerfil">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" pattern="[a-zA-Z\s]+" required>
+                    <div class="invalid-feedback" id="name-error">El nombre solo puede contener letras y espacios.</div>
+                </div>
+                <div class="form-group">
+                    <label for="foto">Foto:</label>
+                    <input type="file" class="form-control" id="foto" name="foto">
+                </div>
+                <div class="form-group">
+                    <label for="profesion">Profesión:</label>
+                    <input type="text" class="form-control" id="profesion" placeholder="Profesión" pattern="[a-zA-Z\s]+" required>
+                    <div class="invalid-feedback" id="profession-error">La profesión solo puede contener letras y espacios.</div>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" pattern="[0-9]+" required>
+                    <div class="invalid-feedback" id="phone-error">El teléfono debe contener solo números.</div>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="correo" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="linkedin">Perfil de LinkedIn:</label>
+                    <input type="text" class="form-control" id="linkedin" placeholder="Perfil de LinkedIn">
+                </div>
+                <div class="form-group">
+                    <label for="habilidades">Habilidades (seleccione máximo 3):</label>
+                    <select id="habilidades" class="form-control" multiple required>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="git">git</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="AJAX">AJAX</option>
+                        <option value="React">React</option>
+                    </select>
+                    <button type="button" class="btn btn-primary mt-2" id="btnAddHabilidad">Añadir</button>
+                    <button type="button" class="btn btn-danger mt-2" id="btnRemoveHabilidad">Eliminar</button>
+                </div>
+                <div id="listaHabilidades"></div>
+                <button type="submit" class="btn btn-primary" id="btnInsertarPerfil">Insertar Perfil</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Desarrolladora de Software</p>
+        <p>Jeison Cacua & Wilmer Sanchez</p>
+    </footer>
+
+    <script src="../js/registrarPerfil.js"></script>
+    <script src="../js/imprimirTarjeta.js"></script>
+    <script src="../js/validar3hab.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta API desde EJS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Perfiles de candidatos</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="development.html">Áreas de Desarrollo</a></li>
+                <li><a href="applicationC.html">Postulación</a></li>
+                <li><a href="perfiles.html">Perfiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Resultados de la API:</h1>
+            <table id="results-table" class="table table-hover mt-3">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Profesión</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">LinkedIn</th>
+                        <th scope="col">Habilidad 1</th>
+                        <th scope="col">Habilidad 2</th>
+                        <th scope="col">Habilidad 3</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Desarrolladora de Software</p>
+        <p> Jeison Cacua & Wilmer Sanchez</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/obtenerPerfiles.js"">
+    </script>
+</body>
+</html>
